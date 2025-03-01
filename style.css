@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden; /* Ngăn chặn tràn ngang */
   width: 100%;
   margin: 0;
@@ -60,27 +61,16 @@ html, body {
   height: 40%;
 }
 
-.img_content_1 {
-  height: 100%;
-}
-
-._img_content_1 {
-  height: 237px;
-  width: 458px;
-}
-
+.img_content_1,
 .img_content_2 {
   height: 100%;
 }
 
+._img_content_1,
 ._img_content_2 {
   height: 237px;
   width: 458px;
 }
-/* .body {
-    background-color: rgb(255 0 0 / 77%);
-} */
-
 
 @media (max-width: 768px) {
   .content_item {
@@ -98,14 +88,13 @@ html, body {
     word-wrap: break-word;
     text-align: center;
   }
-  ._img_content_1{
+  ._img_content_1,
+  ._img_content_2 {
     width: 100%;
-    height: 100%;
+    height: auto; /* Giữ nguyên tỷ lệ ảnh */
+    aspect-ratio: 16 / 9; /* Đảm bảo tất cả ảnh có cùng tỷ lệ */
   }
-  ._img_content_2{
-    width: 100%;
-    height: 100%;
-  }
+
   .header {
     flex-direction: column;
     text-align: center;
