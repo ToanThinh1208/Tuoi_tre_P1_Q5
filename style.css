@@ -83,7 +83,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+  .text_content {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: smaller;
+  }
   .text-header {
     word-wrap: break-word;
     text-align: center;
